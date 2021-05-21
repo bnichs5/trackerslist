@@ -1,0 +1,20 @@
+---
+application:
+  name: "trackerslist"
+  project: "wp"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "quinn"
+    size: "10"
+    type: "ssd"
+    mount_point: "/mnt/quinn"
+databases:
+- type: "MYSQL"
+  name: "freddy"
+  version: "5.7"
+routers:
+- name: "main-trackerslist"
+  routes:
+  - application_name: "trackerslist"
+    paths:
+    - "/*"
